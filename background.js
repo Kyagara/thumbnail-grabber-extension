@@ -1,12 +1,12 @@
 browser.contextMenus.create({
     id: 'open-small-youtube-thumbnail-image',
-    title: 'Get small thumbnail',
+    title: browser.i18n.getMessage('smallThumbnail'),
     onclick: getImage,
 })
 
 browser.contextMenus.create({
     id: 'open-large-youtube-thumbnail-image',
-    title: 'Get large thumbnail',
+    title: browser.i18n.getMessage('largeThumbnail'),
     onclick: getImage,
 })
 

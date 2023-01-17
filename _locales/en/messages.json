@@ -1,0 +1,8 @@
+{
+    "smallThumbnail": {
+        "message": "Get small thumbnail"
+    },
+    "largeThumbnail": {
+        "message": "Get large thumbnail"
+    }
+}
