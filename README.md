@@ -1,3 +1,3 @@
-## YouTube Thumbnail Grabber
+## Thumbnail Grabber Extension
 
-Simple Firefox extension that adds two context menu options to get YouTube thumbnails.
+Simple browser extension that adds two context menu options to get YouTube videos thumbnails, works with Shorts too.

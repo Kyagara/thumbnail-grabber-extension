@@ -1,17 +1,21 @@
+const urls = ['https://www.youtube.com/watch?v=*', 'https://www.youtube.com/shorts/*']
+
+// https://stackoverflow.com/questions/71000139/javascript-regex-for-youtube-video-and-shorts-id
+const regex = /(youtu.*be.*)\/(watch\?v=|embed\/|v|shorts|)(.*?((?=[&#?])|$))/
+
 browser.contextMenus.create({
     id: 'open-small-youtube-thumbnail-image',
     title: browser.i18n.getMessage('smallThumbnail'),
     onclick: getImage,
+    documentUrlPatterns: urls,
 })
 
 browser.contextMenus.create({
     id: 'open-large-youtube-thumbnail-image',
     title: browser.i18n.getMessage('largeThumbnail'),
     onclick: getImage,
+    documentUrlPatterns: urls,
 })
-
-// https://stackoverflow.com/questions/71000139/javascript-regex-for-youtube-video-and-shorts-id
-const regex = /(youtu.*be.*)\/(watch\?v=|embed\/|v|shorts|)(.*?((?=[&#?])|$))/
 
 async function getImage(info, tab) {
     const match = tab.url.match(regex)

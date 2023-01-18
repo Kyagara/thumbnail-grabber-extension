@@ -7,7 +7,7 @@
     "version": "0.1",
     "homepage_url": "https://github.com/Kyagara/thumbnail-grabber-extension",
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["browser-polyfill-min.js", "background.js"]
     },
     "permissions": ["activeTab", "contextMenus"]
 }
